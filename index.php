@@ -1,6 +1,3 @@
-<?php
-    require_once 'static/initApplication.php';
-?>
 <!DOCTYPE html>
 <html>
 <?php
