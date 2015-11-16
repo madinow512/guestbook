@@ -6,6 +6,9 @@
  * Date: 04.11.2015
  * Time: 12:53
  */
+
+define('USER', 'USERNAME');
+
 class CustomSessionHandler
 {
 

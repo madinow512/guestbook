@@ -5,6 +5,7 @@
  * Date: 09.11.2015
  * Time: 19:56
  */
+require_once '../static/initApplication.php' ;
 ?>
 <div class="absoluteElement halfPageContainer">
     <div class="autoWidthElement contentContainer">

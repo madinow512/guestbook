@@ -5,12 +5,11 @@
  * Date: 09.11.2015
  * Time: 19:56
  */
+require_once '../static/initApplication.php' ;
 ?>
 <div class="absoluteElement autoHeightElement fullPageContainer">
     <div class="autoWidthElement contentContainer">
             <?php
-            include_once '../static/constants/session.php' ;
-            include_once '../static/classes/CustomSessionHandler.php' ;
             if(CustomSessionHandler::doesSessionParamExist(USER)){
                 echo "<h2>Willkommen im privaten Bereich</h2>" ;
             }else{

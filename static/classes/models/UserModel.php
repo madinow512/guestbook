@@ -13,8 +13,8 @@ class UserModel extends DatabaseModel
      * @return UserModel
      *
      */
-    public static function getUserByID(){
-        return array_pop(self::getDbAdapter()->exec("SELECT * FROM users WHERE id = ?", array(1), get_class()));
+    public static function getUserByID($id){
+        return array_pop(self::getDbAdapter()->exec("SELECT * FROM users WHERE id = ?", array($id), get_class()));
     }
 
     public function getUsername(){
