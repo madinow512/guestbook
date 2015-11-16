@@ -1,0 +1,52 @@
+div.menu {
+    width: 70px ;
+    z-index: 1000;
+}
+div.menu:hover{
+    width: 90px ;
+}
+div.menu > div.menuHeader{
+    height: 70px ;
+}
+div.menu > div.menuHeader > div.logo{
+    height: 70px;
+    background-size: 70px 70px !important;
+}
+div.menu > div.menuHeader > p {
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 -25px 0 ;
+    opacity: 0;
+}
+div.menu:hover > div.menuHeader > p {
+    opacity: 1;
+}
+div.menu > div.navigation{
+    margin: 90px 0 0 0 ;
+}
+div.menu > div.navigation > ul{
+    padding: 0;
+}
+div.menu > div.navigation > ul > a > li{
+    height: 80px;
+    margin: 25px 0 0 0;
+    text-align: center;
+}
+div.menu > div.navigation > ul > a > li > p{
+    font-size: 14px;
+    margin: 0;
+    opacity: 0;
+}
+div.menu:hover > div.navigation > ul > a > li > p{
+    opacity: 1;
+}
+div.menu > div.navigation > ul > a > li > i{
+    font-size: 40px;
+    margin-top: 7px;
+}
+div.menu > div.navigation > ul > a > li > div.border {
+    height: 1px;
+    margin-top: 7px;
+    background-size: 100% 1px;
+}

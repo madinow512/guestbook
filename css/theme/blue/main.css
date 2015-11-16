@@ -1,0 +1,109 @@
+@import "menu.css";
+@import "content.css";
+@import "sidebar.css";
+
+body, html{
+    font-size: 14px;
+    color: #000 ;
+}
+body{
+    opacity: 0;
+}
+/* Firefox Only - Font size adjustment */
+@-moz-document url-prefix() {
+    body {
+        font-size-adjust: 0.46;
+    }
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+li,
+input,
+div.menu,
+div.menu > div.menuHeader > p  {
+    transition: all 250ms;
+}
+i{
+    transition: font-size 250ms;
+}
+
+a, a:active, a:visited{
+    color: #0096e0;
+    cursor: pointer;
+}
+a.special, a.special:active, a.special:visited{
+    color: #fefefe ;
+}
+a, a:active, a:visited,
+a.special:hover{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a.special.active,
+a.special.active > li{
+    color: #0096e0;
+    opacity: 1 !important;
+}
+
+input{
+    outline: none;
+}
+input[type=text],
+input[type=password]{
+    border: 1px solid #666;
+    color: #666 ;
+}
+input[type=text]:hover,
+input[type=password]:hover{
+    border: 1px solid #363e43;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.2) inset;
+}
+input[type=text]:focus,
+input[type=password]:focus{
+    border: 1px solid #0096e0;
+    color: #363e43;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.35) inset;
+}
+input[type=button],
+input[type=submit]{
+    background: #ccc;
+    color: #363e43 ;
+}
+input[type=button]:hover,
+input[type=submit]:hover{
+    background: #363e43;
+    color: #fefefe ;
+}
+input[type=button]:active,
+input[type=submit]:active{
+    background: #0096e0;
+    color: #fefefe ;
+}
+
+div.page{
+    background: #fefefe ;
+}
+
+.correct{
+    color: #0c0 ;
+}
+.error{
+    color: #c00 ;
+}

@@ -1,0 +1,10 @@
+div.sidebar{
+    background: #fefefe ;
+    box-shadow: -5px 0px 12px rgba(0,0,0,0.35);
+}
+div.sidebar > i{
+    color: #546169;
+}
+div.sidebar > i:hover{
+    color: #363e43;
+}

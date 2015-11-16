@@ -1,0 +1,15 @@
+div.sidebar{
+    display: none;
+    margin-left: 100%;
+    z-index: 1000;
+}
+div.sidebar > i{
+    cursor: pointer;
+    font-size: 30px;
+    margin: 20px;
+    transition: color 250ms;
+}
+div.sidebar > div.sidebarContent{
+    margin: 50px 20px 20px 20px;
+    opacity: 0;
+}

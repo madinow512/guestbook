@@ -1,0 +1,182 @@
+/** ----------------------------------------
+        GENERAL ELEMENTS
+   ------------------------------------------- **/
+
+.alignedElement,
+.leftAlignedElement,
+.rightAlignedElement,
+.topAlignedElement,
+.bottomAlignedElement,
+.horizontalAlignedElement,
+.verticalAlignedElement,
+.bothAlignedElement,
+.absoluteElement {
+    position: absolute;
+}
+
+.relativeElement {
+    position: relative;
+}
+
+.fixedElement{
+    position: fixed;
+}
+
+.alignedElement,
+.leftAlignedElement,
+.rightAlignedElement,
+.topAlignedElement,
+.bottomAlignedElement,
+.horizontalAlignedElement,
+.verticalAlignedElement,
+.bothAlignedElement {
+    margin: auto;
+}
+
+.leftAlignedElement,
+.horizontalAlignedElement,
+.bothAlignedElement,
+.autoWidthElement {
+    left: 0;
+}
+
+.rightAlignedElement,
+.horizontalAlignedElement,
+.bothAlignedElement,
+.autoWidthElement {
+    right: 0;
+}
+
+.topAlignedElement,
+.verticalAlignedElement,
+.bothAlignedElement,
+.autoHeightElement {
+    top: 0;
+}
+
+.bottomAlignedElement,
+.verticalAlignedElement,
+.bothAlignedElement,
+.autoHeightElement {
+    bottom: 0;
+}
+
+.autoWidthElement {
+    width: auto;
+}
+
+.autoHeightElement {
+    height: auto;
+}
+
+
+/** ----------------------------------------
+     BODY & HTML
+   ------------------------------------------- **/
+body, html{
+    overflow: hidden !important;
+}
+
+/** ----------------------------------------
+     HEADING ELEMENTS
+   ------------------------------------------- **/
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+/** ----------------------------------------
+     TABLE ELEMENTS
+   ------------------------------------------- **/
+tr {
+    height: 40px;
+}
+
+td.leftTableCol {
+    width: 120px;
+}
+td.leftTableCol.small{
+    width: 70px;
+}
+td.rightTableCol {
+    width: 300px;
+}
+td.rightTableCol.small {
+    width: 200px;
+}
+
+/** ----------------------------------------
+     FORM ELEMENTS
+   ------------------------------------------- **/
+
+form {
+    margin-top: 35px;
+}
+
+/** ----------------------------------------
+     INPUT ELEMENTS
+   ------------------------------------------- **/
+input {
+    display: block;
+    margin: 0;
+    height: 34px;
+    width: 95%;
+    padding: 5px 12px 5px 12px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-width: 0;
+    outline: none;
+}
+
+/** ----------------------------------------
+     LIST ELEMENTS
+   ------------------------------------------- **/
+ul{
+    list-style-type: none;
+}
+
+/** ----------------------------------------
+     PAGE LAYOUT
+   ------------------------------------------- **/
+.halfPageContainer{
+    width: 50%;
+}
+.halfPageContainer:nth-child(1){
+    margin: 0;
+}
+.halfPageContainer:nth-child(2){
+    margin-left: 50% ;
+}
+.fullPageContainer{
+    width: 100%;
+}
+.contentContainer{
+    margin: 10px 30px 10px 30px ;
+    padding: 10px 0 10px 0;
+    text-align: justify;
+}

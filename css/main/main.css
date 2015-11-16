@@ -1,0 +1,26 @@
+@import "menu.css";
+@import "content.css";
+@import "sidebar.css";
+
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    /*
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    */
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.invisible{
+    display: none;
+}

@@ -1,0 +1,28 @@
+
+div.menu {
+    box-shadow: 5px 0px 5px rgba(0,0,0,0.15);
+    background: #363e43 ;
+    cursor: default;
+}
+div.menu:hover{
+    box-shadow: 5px 0px 12px rgba(0,0,0,0.35);
+    background: #272d30;
+}
+div.menu > div.menuHeader {
+}
+div.menu > div.menuHeader > div.logo{
+    background: url('../../../graphics/logo.png') center no-repeat;
+}
+div.menu > div.menuHeader > p {
+    color: #fefefe;
+}
+div.menu > div.navigation > ul > a > li{
+    cursor: pointer;
+    opacity: 0.7;
+}
+div.menu > div.navigation > ul > a > li:hover{
+    opacity: 1;
+}
+div.menu > div.navigation > ul > a > li > div.border{
+    background: url("../../../graphics/border/navBorder.png") center no-repeat;
+}

@@ -1,0 +1,63 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Markus
+ * Date: 11.11.2015
+ * Time: 18:52
+ */
+?>
+<script>
+    $(document).ready(function() {
+        $("#register_password").on("keypress keyup keydown", function() {
+            checkPassStrength($(this));
+            //$("#strength_score").text(scorePassword(pass));
+        });
+        checkPassStrength($("#register_password"));
+    });
+</script>
+<div class="absoluteElement fullPageContainer">
+    <div class="contentContainer">
+        <h2>Registrieren</h2>
+        <p id="register_message">Hier kannst Du Dich registrieren.</p>
+        <p>Anschließend kannst Du Dich <a href="static/user/login.php">hier</a> mit Deinen Anmeldedaten anmelden.</p>
+        <form>
+            <table>
+                <tr>
+                    <td class="rightTableCol">
+                        <input type="text" id="register_username" value="" placeholder="benutzername"/>
+                    </td>
+                    <td class="error invisible" id="register_error_username">
+                        Bitte gib einen Benutzernamen ein.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rightTableCol">
+                        <input type="password" id="register_password" value="" placeholder="passwort"/>
+                        <div class="strength_meter">
+                            <div id="strength_human"></div>
+                        </div>
+                    </td>
+                    <td class="error invisible" id="register_error_password">
+                        Bitte gib ein Passwort ein.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rightTableCol">
+                        <input type="password" id="register_password_repeat" value="" placeholder="passwort wiederholen"/>
+                    </td>
+                    <td class="error invisible" id="register_error_password_repeat">
+                        Bitte wiederhole Dein Passwort.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rightTableCol">
+                        <input type="button" id="register_submit" value="registrieren" onclick="performRegister();"/>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
