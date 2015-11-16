@@ -4,14 +4,14 @@
 <!DOCTYPE html>
 <html>
 <?php
-include_once "static/components/header.php";
+include_once "templates/components/header.html";
 ?>
 <body onload="initApplication();">
 
 <div class="absoluteElement autoWidthElement autoHeightElement page">
 
     <?php
-        include_once "static/components/menu.php";
+        include_once "templates/components/menu.html";
     ?>
 
     <div class="absoluteElement autoWidthElement autoHeightElement contentArea">
@@ -19,7 +19,7 @@ include_once "static/components/header.php";
     </div>
 
     <?php
-        include_once "static/components/sidebar.php";
+        include_once "templates/components/sidebar.html";
     ?>
 
 </div>

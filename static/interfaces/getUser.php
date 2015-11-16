@@ -12,6 +12,6 @@ if(isset($_GET['id'])){
 
     $id = $_GET['id'] ;
 
-    print UserModel::getUserByID($id);
+    print json_encode(UserModel::getUserByID($id));
 
 }

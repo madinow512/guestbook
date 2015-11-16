@@ -29,24 +29,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/init.css" />
-        <option value="$PROJECT_DIR$/css/theme/blue.css" />
-        <option value="$PROJECT_DIR$/css/main/content.css" />
-        <option value="$PROJECT_DIR$/js/blurjs.js" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/css/theme/blue/content.css" />
-        <option value="$PROJECT_DIR$/css/theme/blue/menu.css" />
-        <option value="$PROJECT_DIR$/css/madNormalize.css" />
-        <option value="$PROJECT_DIR$/css/theme/blue/sidebar.css" />
-        <option value="$PROJECT_DIR$/static/menu.php" />
-        <option value="$PROJECT_DIR$/css/main/menu.css" />
-        <option value="$PROJECT_DIR$/js/login.js" />
-        <option value="$PROJECT_DIR$/static/header.php" />
-        <option value="$PROJECT_DIR$/static/login.php" />
-        <option value="$PROJECT_DIR$/js/loginCheck.js" />
-        <option value="$PROJECT_DIR$/css/main/sidebar.css" />
-        <option value="$PROJECT_DIR$/static/sidebar.php" />
         <option value="$PROJECT_DIR$/static/register.php" />
         <option value="$PROJECT_DIR$/static/user/login.php" />
         <option value="$PROJECT_DIR$/js/user/valueChecker.js" />
@@ -54,7 +36,6 @@
         <option value="$PROJECT_DIR$/js/user/registerCheck.js" />
         <option value="$PROJECT_DIR$/js/init.js" />
         <option value="$PROJECT_DIR$/js/navigation.js" />
-        <option value="$PROJECT_DIR$/static/components/header.php" />
         <option value="$PROJECT_DIR$/static/user/register.php" />
         <option value="$PROJECT_DIR$/css/lib/strength.css" />
         <option value="$PROJECT_DIR$/js/lib/passwordCheck.js" />
@@ -69,15 +50,36 @@
         <option value="$PROJECT_DIR$/static/classes/Application.php" />
         <option value="$PROJECT_DIR$/static/classes/lib.php" />
         <option value="$PROJECT_DIR$/static/classes/models/UserModel.php" />
-        <option value="$PROJECT_DIR$/static/interfaces/getUser.php" />
         <option value="$PROJECT_DIR$/static/initApplication.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/content/info.php" />
-        <option value="$PROJECT_DIR$/content/private.php" />
         <option value="$PROJECT_DIR$/content/public.php" />
         <option value="$PROJECT_DIR$/static/constants/session.php" />
         <option value="$PROJECT_DIR$/static/classes/lib/CustomSessionHandler.php" />
         <option value="$PROJECT_DIR$/static/classes/lib/Application.php" />
+        <option value="$PROJECT_DIR$/js/interfaces/PostInterfacew.js" />
+        <option value="$PROJECT_DIR$/js/interfaces/PostInterface.js" />
+        <option value="$PROJECT_DIR$/static/components/header.php" />
+        <option value="$PROJECT_DIR$/static/interfaces/getUser.php" />
+        <option value="$PROJECT_DIR$/content/noAccess.php" />
+        <option value="$PROJECT_DIR$/js/interfaces/GetInterface.js" />
+        <option value="$PROJECT_DIR$/static/interfaces/checkUserLogin.php" />
+        <option value="$PROJECT_DIR$/content/private.php" />
+        <option value="$PROJECT_DIR$/static/components/menu.php" />
+        <option value="$PROJECT_DIR$/content/private/index.php" />
+        <option value="$PROJECT_DIR$/content/info/index.php" />
+        <option value="$PROJECT_DIR$/content/public/index.php" />
+        <option value="$PROJECT_DIR$/content/private/index.html" />
+        <option value="$PROJECT_DIR$/templates/content/info/index.html" />
+        <option value="$PROJECT_DIR$/templates/content/public/index.html" />
+        <option value="$PROJECT_DIR$/static/components/header.html" />
+        <option value="$PROJECT_DIR$/static/components/menu.html" />
+        <option value="$PROJECT_DIR$/static/components/sidebar.html" />
+        <option value="$PROJECT_DIR$/templates/components/menu.html" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/templates/content/private/index.html" />
+        <option value="$PROJECT_DIR$/templates/sidebar/user/register.html" />
+        <option value="$PROJECT_DIR$/templates/sidebar/user/login.html" />
+        <option value="$PROJECT_DIR$/templates/content/noAccess.html" />
       </list>
     </option>
   </component>
@@ -165,7 +167,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sidebar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuestbookDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Guestbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuestbookDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Guestbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="private" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuestbookDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Guestbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -180,50 +248,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GuestbookDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guestbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GuestbookDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guestbook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,7 +275,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="content" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interfaces" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -270,6 +298,7 @@
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJavaScript 1.5" value="false" />
     <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -280,11 +309,11 @@
       <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\GuestbookDemo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\static\classes\lib" />
-      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\static\classes\models" />
-      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\GuestbookDemo\js\user" />
-      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\GuestbookDemo\static\user" />
-      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\GuestbookDemo\static\components" />
+      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\templates" />
+      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\templates\sidebar" />
+      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\content\public" />
+      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\content\private" />
+      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\content\info" />
     </key>
   </component>
   <component name="RunManager">
@@ -398,28 +427,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/main/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/theme/blue/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/header.php">
+    <entry file="file://$PROJECT_DIR$/templates/components/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -538,31 +546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13178295" vertical-offset="0" max-vertical-offset="0">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main/sidebar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10979548" vertical-offset="0" max-vertical-offset="0">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13178295" vertical-offset="0" max-vertical-offset="0">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/user/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13178295" vertical-offset="0" max-vertical-offset="0">
-          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -594,24 +581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/components/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41417497" vertical-offset="0" max-vertical-offset="0">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/user/valueChecker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.073196985" vertical-offset="0" max-vertical-offset="0">
           <caret line="6" column="57" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/user/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="0">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -655,6 +628,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3153014" vertical-offset="0" max-vertical-offset="0">
           <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -679,7 +653,7 @@
         <state vertical-scroll-proportion="0.33887044" vertical-offset="0" max-vertical-offset="1054">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding>
-            <element signature="e#6#186#0#PHP" expanded="true" />
+            <element signature="e#6#186#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -694,68 +668,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2378902" vertical-offset="0" max-vertical-offset="929">
-          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/initApplication.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
           <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/interfaces/getUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30121815" vertical-offset="0" max-vertical-offset="903">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="561">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="714">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="7" selection-end-column="46" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/private.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="357">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/public.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11295681" vertical-offset="0" max-vertical-offset="903">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="false" />
+            <element signature="e#6#92#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -765,7 +683,7 @@
         <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="1071">
           <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding>
-            <element signature="e#7#89#0#PHP" expanded="true" />
+            <element signature="e#7#89#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -774,6 +692,132 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43521595" vertical-offset="100" max-vertical-offset="1003">
           <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/interfaces/PostInterface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="19" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc;n#PostInterface#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/interfaces/getUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16943522" vertical-offset="0" max-vertical-offset="903">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/interfaces/checkUserLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11295681" vertical-offset="0" max-vertical-offset="903">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/interfaces/GetInterface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33406115" vertical-offset="0" max-vertical-offset="916">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2378902" vertical-offset="0" max-vertical-offset="929">
+          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content/info/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="903">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/components/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/components/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="629">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="561">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/components/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09413067" vertical-offset="0" max-vertical-offset="903">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content/private/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22591361" vertical-offset="0" max-vertical-offset="903">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sidebar/user/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="1105">
+          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sidebar/user/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="697">
+          <caret line="5" column="89" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content/noAccess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.056478404" vertical-offset="0" max-vertical-offset="903">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
