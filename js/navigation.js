@@ -4,7 +4,7 @@
 function bindClickEvent() {
     $('body').on('click', 'a',  function (e) {
         e.preventDefault();
-        if (!$(this).hasClass('active')) {
+        if (!$(this).hasClass('active') && !$(this).hasClass('notActivated')) {
             var scope = this;
             closeSidebar(function(){
                 if ($(scope).hasClass('special')) {

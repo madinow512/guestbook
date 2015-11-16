@@ -107,3 +107,9 @@ div.page{
 .error{
     color: #c00 ;
 }
+
+.popup{
+    background: #272d30;
+    color: #fefefe;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.35);
+}

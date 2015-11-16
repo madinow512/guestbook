@@ -23,6 +23,7 @@ class DatabaseAdapter
 
     private function connect(){
         $this->connection = new PDO("mysql:host=".self::$DB_SERVER.";dbname=".self::$DB_NAME.";charset=utf8", self::$DB_USER, self::$DB_PASSWORD);
+        $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
     private function disconnect(){
@@ -33,15 +34,18 @@ class DatabaseAdapter
         if(!isset($params)){
             $params = array();
         }
+        $producesResult = strpos($query, "SELECT") > -1;
         $isClazzDefined = isset($clazz);
         $this->connect();
         $statement = $this->connection->prepare($query);
         $statement->execute($params);
         $result = array();
-        if($isClazzDefined){
-            $result = $statement->fetchAll(PDO::FETCH_CLASS, $clazz);
-        }else{
-            $result = $statement->fetchAll();
+        if($producesResult){
+            if($isClazzDefined){
+                $result = $statement->fetchAll(PDO::FETCH_CLASS, $clazz);
+            }else{
+                $result = $statement->fetchAll();
+            }
         }
         $this->disconnect();
         return $result;

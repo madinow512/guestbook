@@ -8,6 +8,7 @@ include_once "templates/components/header.html";
 <div class="absoluteElement autoWidthElement autoHeightElement page">
 
     <?php
+        include_once "templates/components/popup.html";
         include_once "templates/components/menu.html";
     ?>
 

@@ -16,12 +16,8 @@ function performLogin(){
 }
 
 function doLogin(username, password){
-    /*
-    send ajax-request to server and check whether user with the submitted credentials exists.
-    Depending on that handle success or error case.
-     */
-    $('#login_message').addClass('correct');
-    $('#login_message').text("Du wurdest erfolgreich angemeldet.");
+    password = CryptoJS.MD5(password).toString();
+    PostInterface.execute(urlAPI+'user/login.php', {username: username, password: password}, loginSuccess, loginError);
 }
 
 function handleInvalidLogin(check){
@@ -33,4 +29,19 @@ function handleInvalidLogin(check){
             $('#login_error_password').removeClass('invisible');
         }
     }
+}
+
+function loginSuccess(data){
+    showPopup(data.message);
+    closeSidebar();
+    $('#login_message').removeClass('error');
+    $('#login_message').addClass('correct');
+    $('#login_message').text("Du wurdest erfolgreich angemeldet.");
+    $('.contentContainer').load('templates/content/private/');
+}
+
+function loginError(data){
+    $('#login_message').removeClass('correct');
+    $('#login_message').addClass('error');
+    $('#login_message').text(JSON.parse(data.responseText).message);
 }

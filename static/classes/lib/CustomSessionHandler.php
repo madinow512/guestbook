@@ -12,8 +12,6 @@ define('USER', 'USERNAME');
 class CustomSessionHandler
 {
 
-    private static $simSession = null ;
-
     public static function init(){
         self::createNewSession();
     }
@@ -21,38 +19,38 @@ class CustomSessionHandler
     public static function createNewSession()
     {
         if (!self::doesSessionExist()) {
-            self::$simSession = array();
+            session_start();
         }
     }
 
     public static function doesSessionExist()
     {
-        return isset(self::$simSession) ;
+        return isset($_SESSION) ;
     }
 
     public static function destroySession()
     {
-        self::$simSession = null ;
+        session_destroy();
     }
 
     public static function bindNewSessionParam($key, $value)
     {
         if (isset($key) && isset($value)) {
-            self::$simSession[$key] = $value;
+            $_SESSION[$key] = $value;
         }
     }
 
     public static function getSessionParamByKey($key)
     {
         if (self::doesSessionParamExist($key)) {
-            return self::$simSession[$key];
+            return $_SESSION[$key];
         }
         return null;
     }
 
     public static function doesSessionParamExist($key)
     {
-        return self::doesSessionExist() && isset($key) && isset(self::$simSession[$key]) ;
+        return self::doesSessionExist() && isset($key) && isset($_SESSION[$key]) ;
     }
 
 }

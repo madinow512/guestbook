@@ -6,7 +6,6 @@
  * Time: 14:47
  */
 
-require_once '../initApplication.php';
+require_once '../../initApplication.php';
 
-header('Access-Control-Allow-Origin: *');
 print json_encode(CustomSessionHandler::doesSessionParamExist(USER));

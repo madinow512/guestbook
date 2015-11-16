@@ -1,9 +1,11 @@
 
 <script>
-    GetInterface.execute('http://'+document.location.hostname+'/static/interfaces/checkUserLogin.php', null,
+    GetInterface.execute(urlAPI+'user/checkUserLogin.php', null,
         function (loggedIn) {
             if(!loggedIn) {
                 $('.contentContainer').load('templates/content/noAccess.html');
+            }else{
+                $('#nav_signout').removeClass('invisible');
             }
         }, function (error) {
             console.log(error);

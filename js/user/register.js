@@ -13,19 +13,17 @@ function performRegister(){
     check[3] = password === password_r ;
     check.correct &= check[3] ;
     if(check.correct){
-        doRegister(username, password);
+        doRegister(username, password, password_r);
     }else{
         handleInvalidRegistration(check);
     }
 }
 
-function doRegister(username, password){
-    /*
-     send ajax-request to server and check whether user with the submitted credentials exists.
-     Depending on that handle success or error case.
-     */
-    $('#register_message').addClass('correct');
-    $('#register_message').text("Du hast Dich erfolgreich registriert.");
+function doRegister(username, password, password_r){
+    password = CryptoJS.MD5(password).toString();
+    password_r = CryptoJS.MD5(password_r).toString();
+    PostInterface.execute(urlAPI+"user/register.php", {username: username, password: password, c_password: password_r},
+        registerSuccess, registerError);
 }
 
 function handleInvalidRegistration(check){
@@ -40,4 +38,17 @@ function handleInvalidRegistration(check){
             $('#register_error_password_repeat').removeClass('invisible');
         }
     }
+}
+
+function registerSuccess(data){
+    showPopup(data.message);
+    $('#register_message').removeClass('error');
+    $('#register_message').addClass('correct');
+    $('#register_message').text("Du hast Dich erfolgreich registriert.");
+}
+
+function registerError(data){
+    $('#register_message').removeClass('correct');
+    $('#register_message').addClass('error');
+    $('#register_message').text(JSON.parse(data.responseText).message);
 }
