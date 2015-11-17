@@ -56,7 +56,7 @@ abstract class DatabaseModel
         $placeholderArr = implode(',', $tValuePlaceholder);
         $query = "INSERT INTO ".$clazz::$tablename." (".$nameArr.") VALUES (".$placeholderArr.")" ;
         self::getDbAdapter()->exec($query, $tValues, $clazz);
-        return false ;
+        return true ;
     }
 
     /**
