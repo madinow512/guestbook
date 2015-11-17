@@ -9,12 +9,6 @@ body, html{
 body{
     opacity: 0;
 }
-/* Firefox Only - Font size adjustment */
-@-moz-document url-prefix() {
-    body {
-        font-size-adjust: 0.46;
-    }
-}
 
 ::-webkit-scrollbar-track {
     background: transparent;

@@ -45,9 +45,10 @@ function displayPage() {
 
 function openSidebar(callback) {
     if ($('.sidebar').width() <= 0) {
+        var marginLeft = isMobileVersion() ? 70 : "50%" ;
         blurContent(0, 1);
         $('.sidebar').show();
-        $('.sidebar').stop().animate({marginLeft: "50%"}, 250, "easeOutSine", function () {
+        $('.sidebar').stop().animate({marginLeft: marginLeft}, 250, "easeOutSine", function () {
             $('.sidebarContent').stop().animate({opacity: 1}, 150);
             if (callback) {
                 callback();
@@ -81,12 +82,22 @@ function closeSidebar(callback) {
     }
 }
 
+function resizeSidebar(){
+    if ($('.sidebar').width() > 0) {
+        if(isMobileVersion()){
+            $('.sidebar').animate({marginLeft: 70}, 250, "easeOutSine");
+        }else{
+            $('.sidebar').animate({marginLeft: "50%"}, 250, "easeOutSine");
+        }
+    }
+}
+
 function showPopup(message){
     if(!message){
         message = "" ;
     }
     $('.popup').text(message);
-    $('.popup').animate({'marginTop': 0}, 250, "easeOutSine", function(){
+    $('.popup').animate({marginTop: 0}, 250, "easeOutSine", function(){
         setTimeout(function(){
             closePopup();
         }, 2000);
@@ -94,5 +105,5 @@ function showPopup(message){
 }
 
 function closePopup(){
-    $('.popup').animate({'marginTop': -70}, 250, "easeOutSine");
+    $('.popup').animate({marginTop: -70}, 250, "easeOutSine");
 }

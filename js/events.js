@@ -2,9 +2,15 @@
  * Created by Markus on 11.11.2015.
  */
 
+function registerResizeEvent(){
+    $(window).resize(function(){
+        resizeSidebar();
+    });
+}
+
 function registerLinkClickEvent() {
     bindClickEvent();
-    $('#nav_private').click();
+    $('#nav_public').click();
 }
 
 function registerMenuHoverEvent() {

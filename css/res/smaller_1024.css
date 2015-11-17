@@ -1,0 +1,15 @@
+/**
+        MENU
+**/
+div.menu:hover{
+    width: 70px !important;
+}
+div.menu > div.menuHeader > p,
+div.menu > div.navigation > ul > a > li > p,
+div.menu > div.navigation > ul > a > li > div.border {
+    display: none;
+}
+div.menu > div.navigation > ul > a > li{
+    width: 70px;
+    height: 70px;
+}

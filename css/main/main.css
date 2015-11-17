@@ -16,6 +16,13 @@ html, body{
     */
 }
 
+/* Firefox Only - Font size adjustment */
+@-moz-document url-prefix() {
+    body {
+        font-size-adjust: 0.5;
+    }
+}
+
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
