@@ -1,20 +1,13 @@
 <div class="absoluteElement horizontalAlignedElement autoHeightElement centeredContent">
     <div class="autoWidthElement contentContainer simple">
         <h2>Der öffentliche Bereich</h2>
-        Beiträge im öffentlichen Bereich können von jedem gelesen werden. <br>
-        <a href="templates/sidebar/content/newContent_public.html"><i class="fa fa-plus"></i> Verfasse einen neuen Beitrag</a>
+        <p>Beiträge im öffentlichen Bereich können von jedem gelesen werden. </p>
+        <p><a href="templates/sidebar/content/newContent_public.html"><i class="fa fa-plus"></i> Verfasse einen neuen Beitrag</a></p>
     </div>
     <div id="contentBoxContainer" class="autoWidthElement contentContainer simple">
-
     </div>
 </div>
+
 <script>
-    jQuery.ajaxSetup({ async: false });
-    for(var i=0; i < 10; i++){
-        $.get("templates/content/contentBox.html", '', function (data) {
-            data = $(data);
-            $(data.find('#contentTitle')[0]).text('Hello World '+i);
-            $("#contentBoxContainer").append(data);
-        });
-    }
+    loadPublicContent();
 </script>

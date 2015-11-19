@@ -16,6 +16,8 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     if(UserModel::userExists($username)){
         $user = UserModel::getUserByName($username) ;
         if(PassHash::check_password($user->getPassword(), $password)){
+            $user->setLastLogin(date('Y-m-d G:i:s'));
+            $user->update();
             CustomSessionHandler::bindNewSessionParam(USER, $user->getUsername());
             Core::sendHTTPResponse(200, "Willkommen, ".$username.".");
         }else{

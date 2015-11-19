@@ -20,10 +20,14 @@ GetInterface.execute = function(url, data, successCallback, errorCallback){
             request.setRequestHeader("Access-Control-Allow-Headers", "Content-Type, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since, X-File-Name, Cache-Control");
         },
         success: function(sData){
-            successCallback(sData);
+            if(successCallback){
+                successCallback(sData);
+            }
         },
         error: function(eData){
-            errorCallback(eData);
+            if(errorCallback){
+                errorCallback(eData);
+            }
         }
     })
 };

@@ -35,10 +35,47 @@ abstract class DatabaseModel
     }
 
     /**
-     * saves the model to the database
+     * @return Integer
+     */
+    public function getID(){
+        return $this->id ;
+    }
+
+    /**
+     * saves a new model to the database
      */
     public function save(){
         $clazz = $this->getClass();
+        $properties = $this->getProperties();
+        $nameArr = implode(',', $properties['names']);
+        $placeholderArr = implode(',', $properties['placeholders']);
+        $query = "INSERT INTO ".$clazz::$tablename." (".$nameArr.") VALUES (".$placeholderArr.")" ;
+        self::getDbAdapter()->exec($query, $properties['values'], $clazz);
+        return true ;
+    }
+
+    /**
+     * updates an existing model
+     */
+    public function update(){
+        $clazz = $this->getClass();
+        $properties = $this->getProperties();
+        $q_set = "SET ";
+        for($i = 0; $i < sizeof($properties['names']); $i++){
+            $q_set .= $properties['names'][$i]."=".$properties['placeholders'][$i];
+            if($i < sizeof($properties['names'])-1){
+                $q_set .= ', ' ;
+            }
+        }
+        $query = "UPDATE ".$clazz::$tablename." ".$q_set." WHERE id=".$this->getID();
+        self::getDbAdapter()->exec($query, $properties['values'], $clazz);
+        return true ;
+    }
+
+    /**
+     * @return array
+     */
+    private function getProperties(){
         $reflect = new ReflectionObject($this);
         $props = $reflect->getProperties(ReflectionProperty::IS_PUBLIC | ReflectionProperty::IS_PROTECTED | ReflectionProperty::IS_PRIVATE);
         $tNames = array();
@@ -46,17 +83,13 @@ abstract class DatabaseModel
         $tValuePlaceholder = array();
         foreach($props as $prop){
             $prop->setAccessible(true);
-            if(!$prop->isStatic()) {
+            if(!$prop->isStatic() && $prop->getName() !== 'id' && (!preg_match('/_/', $prop->getName()) || strpos($prop->getName(), '_') > 0)) {
                 array_push($tNames,  $prop->getName());
                 array_push($tValues, $prop->getValue($this));
                 array_push($tValuePlaceholder, '?');
             }
         }
-        $nameArr = implode(',', $tNames);
-        $placeholderArr = implode(',', $tValuePlaceholder);
-        $query = "INSERT INTO ".$clazz::$tablename." (".$nameArr.") VALUES (".$placeholderArr.")" ;
-        self::getDbAdapter()->exec($query, $tValues, $clazz);
-        return true ;
+        return array("names" => $tNames, "values" => $tValues, "placeholders" => $tValuePlaceholder);
     }
 
     /**

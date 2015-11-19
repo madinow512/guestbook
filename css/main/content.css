@@ -32,7 +32,6 @@ div.contentBox > div.contentBoxHeader > div.infobox > h4{
 }
 div.contentBox > div.contentBoxMessage{
     padding: 10px;
-    height: 100px ;
 }
 table.fullsize{
     width: 100% ;

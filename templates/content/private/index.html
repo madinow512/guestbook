@@ -1,15 +1,9 @@
-
 <script>
-    GetInterface.execute(urlAPI+'user/checkUserLogin.php', null,
-        function (loggedIn) {
-            if(!loggedIn) {
-                $('.contentContainer').load('templates/content/noAccess.html');
-            }else{
-                $('#nav_signout').removeClass('invisible');
-            }
-        }, function (error) {
-            console.log(error);
-        });
+    checkLoginStatus(function () {
+        $('#nav_signout').removeClass('invisible');
+    }, function () {
+        $('.contentContainer').load('templates/content/noAccess.html');
+    });
 </script>
 <div class="absoluteElement autoHeightElement fullPageContainer">
     <div class="autoWidthElement contentContainer">

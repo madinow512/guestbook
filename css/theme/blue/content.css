@@ -11,12 +11,14 @@ div.contentBox{
     border: 1px solid #ccc;
     border-left: 5px solid #0096e0;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    cursor: default;
 }
 div.contentBox:hover{
     box-shadow: 0px 0px 8px rgba(0,0,0,0.25);
 }
 div.contentBox > div.contentBoxHeader > div.avatar{
-    border: 1px solid #363e43;
+    background: url('../../../graphics/avatar/avatar_default.png') center no-repeat;
+    background-size: cover;
 }
 div.contentBox > div.contentBoxHeader > div.infobox > h5{
     color: #363e43;

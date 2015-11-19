@@ -64,10 +64,17 @@ class UserModel extends DatabaseModel
     }
 
     /**
-     * @return Integer
+     * @param $timestamp
      */
-    public function getID(){
-        return $this->id ;
+    public function setLastLogin($timestamp){
+        $this->lastLogin = $timestamp ;
+    }
+
+    /**
+     * @param $timestamp
+     */
+    public function setRegistered($timestamp){
+        $this->registered = $timestamp ;
     }
 
     /**

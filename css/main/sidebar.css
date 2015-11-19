@@ -2,6 +2,8 @@ div.sidebar{
     display: none;
     margin-left: 100%;
     z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 div.sidebar > i{
     cursor: pointer;

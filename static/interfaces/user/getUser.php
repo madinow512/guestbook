@@ -9,6 +9,4 @@
 
 require_once '../../initApplication.php';
 
-print strpos("hello World", "World");
-
-print UserModel::getUserByName('mady512');
+print json_encode(array("username" => CustomSessionHandler::getSessionParamByKey(USER)));

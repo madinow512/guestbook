@@ -46,6 +46,11 @@ function registerKeyEvents() {
             $($(this).find(':button')[0]).click();
         }
     });
+    $('body').on('keypress', 'textarea', function(e){
+        if(e.keyCode === 13){
+            e.stopImmediatePropagation();
+        }
+    });
 }
 
 function bindContentAreaClick() {
