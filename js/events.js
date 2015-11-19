@@ -2,6 +2,15 @@
  * Created by Markus on 11.11.2015.
  */
 
+function bindContextMenu() {
+    // disable context menu, if dev-mode is not enabled
+    if (!devModeEnabled) {
+        $(document).bind("contextmenu", function (e) {
+            return false;
+        });
+    }
+}
+
 function registerResizeEvent(){
     $(window).resize(function(){
         resizeSidebar();

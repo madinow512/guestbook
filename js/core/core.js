@@ -2,11 +2,6 @@
  * Created by Markus on 17.11.2015.
  */
 
-/**
- * specifies whether we're currently in development mode
- * @type {boolean}
- */
-var devModeEnabled = true;
 
 /**
  * Detects mobile devices ( mobiles  only )

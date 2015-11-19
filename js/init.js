@@ -7,5 +7,6 @@ function initApplication() {
     registerMenuHoverEvent();
     registerLinkClickEvent();
     bindContentAreaClick();
+    bindContextMenu();
     displayPage();
 }

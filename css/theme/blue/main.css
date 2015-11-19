@@ -29,7 +29,8 @@ body{
 li,
 input,
 div.menu,
-div.menu > div.menuHeader > p  {
+div.menu > div.menuHeader > p,
+div.contentBox {
     transition: all 250ms;
 }
 i{
@@ -56,21 +57,25 @@ a.special.active > li{
     opacity: 1 !important;
 }
 
-input{
+input,
+textarea{
     outline: none;
 }
 input[type=text],
-input[type=password]{
+input[type=password],
+textarea{
     border: 1px solid #666;
     color: #666 ;
 }
 input[type=text]:hover,
-input[type=password]:hover{
+input[type=password]:hover,
+textarea:hover{
     border: 1px solid #363e43;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.2) inset;
 }
 input[type=text]:focus,
-input[type=password]:focus{
+input[type=password]:focus,
+textarea:focus{
     border: 1px solid #0096e0;
     color: #363e43;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.35) inset;

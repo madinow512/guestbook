@@ -2,4 +2,39 @@ div.contentArea{
     margin: 0 0 0 70px;
     z-index: 100;
     overflow-y: auto;
+    overflow-x: hidden;
+}
+
+div.centeredContent{
+    width: 80% ;
+}
+
+div.contentBox{
+    margin: 15px 0 0 0 ;
+}
+div.contentBox > div.contentBoxHeader{
+    height: 70px ;
+    margin: 0;
+}
+div.contentBox > div.contentBoxHeader > div.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50% ;
+    margin: 10px ;
+}
+div.contentBox > div.contentBoxHeader > div.infobox{
+    margin: 0 0 0 70px;
+}
+div.contentBox > div.contentBoxHeader > div.infobox > h5,
+div.contentBox > div.contentBoxHeader > div.infobox > h4{
+    margin: 0 0 0 10px ;
+    padding: 8px 0 0 0 ;
+}
+div.contentBox > div.contentBoxMessage{
+    padding: 10px;
+    height: 100px ;
+}
+table.fullsize{
+    width: 100% ;
+    resize: none;
 }
