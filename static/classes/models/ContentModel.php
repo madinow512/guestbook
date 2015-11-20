@@ -21,7 +21,7 @@ class ContentModel extends DatabaseModel{
      * @return array
      */
     public static function getPublicContent($limit = 10, $offset = 0){
-        $query = "SELECT * FROM content WHERE user_id IS NULL ORDER BY created ASC LIMIT $offset, $limit";
+        $query = "SELECT * FROM content WHERE user_id IS NULL ORDER BY created DESC LIMIT $offset, $limit";
         return self::getDbAdapter()->exec($query, null, get_class());
     }
 
@@ -31,7 +31,7 @@ class ContentModel extends DatabaseModel{
      * @return array
      */
     public static function getPrivateContent($limit = 10, $offset = 0){
-        $query = "SELECT * FROM content WHERE user_id IS NOT NULL ORDER BY created ASC LIMIT $offset, $limit";
+        $query = "SELECT * FROM content WHERE user_id IS NOT NULL ORDER BY created DESC LIMIT $offset, $limit";
         return self::getDbAdapter()->exec($query, null, get_class());
     }
 

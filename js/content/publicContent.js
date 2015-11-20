@@ -22,13 +22,13 @@ var monthNames = [
 
 function loadPublicContent(limit, offset){
     var data = {mode: 'public', limit: limit, offset: offset};
+    startProgressBar(pollingIntervalTime);
     GetInterface.execute(urlAPI+'content/getContent.php', data, loadFn, null);
 }
 
 function loadFn(data){
-    startProgressBar(pollingIntervalTime);
     if(data){
-        contentOffset += data.length ;
+        data.reverse();
         jQuery.ajaxSetup({ async: false });
         for(var i =0; i < data.length; i++){
             var content = data[i] ;

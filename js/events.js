@@ -19,7 +19,7 @@ function registerResizeEvent(){
 
 function registerLinkClickEvent() {
     bindClickEvent();
-    $('#nav_public').click();
+    $('#nav_private').click();
 }
 
 function registerMenuHoverEvent() {

@@ -8,6 +8,7 @@
  */
 
 define('USER', 'USERNAME');
+define('LATEST_CONTENT', 'LATEST_CONTENT');
 
 class CustomSessionHandler
 {

@@ -13,18 +13,31 @@ $offset = 0 ;
 $limit = 10 ;
 
 if(isset($_GET['mode'])){
-    $result = array();
+    $contents = array();
     if(isset($_GET['limit']) && isset($_GET['offset'])){
         $limit = $_GET['limit'];
         $offset = $_GET['offset'] ;
     }
     $mode = $_GET['mode'];
     if($mode === 'private'){
-        $result = ContentModel::getPrivateContent($limit, $offset);
+        $contents = ContentModel::getPrivateContent($limit, $offset);
     }else if($mode === 'public'){
-        $result = ContentModel::getPublicContent($limit, $offset);
+        $contents = ContentModel::getPublicContent($limit, $offset);
     }
-    print json_encode($result);
+    if(!CustomSessionHandler::doesSessionParamExist(LATEST_CONTENT) || CustomSessionHandler::getSessionParamByKey(LATEST_CONTENT) !== $contents[0]->getID()){
+        $results = array();
+        foreach ($contents as $c) {
+            if($c->getID() > CustomSessionHandler::getSessionParamByKey(LATEST_CONTENT)){
+                array_push($results, $c);
+            }else{
+                break ;
+            }
+        }
+        CustomSessionHandler::bindNewSessionParam(LATEST_CONTENT, $contents[0]->getID());
+        print json_encode($results);
+    }else{
+        print json_encode(array());
+    }
 }else{
     Core::sendHTTPResponse(400, "Es ist ein Fehler beim Laden der Beiträge aufgetreten.");
 }

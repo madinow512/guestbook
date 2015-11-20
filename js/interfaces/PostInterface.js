@@ -11,10 +11,14 @@ PostInterface.execute = function(url, data, successCallback, errorCallback){
         async: true,
         dataType: 'json',
         success: function(sData){
-            successCallback(sData);
+            if(successCallback){
+                successCallback(sData);
+            }
         },
         error: function(eData){
-            errorCallback(eData);
+            if(errorCallback){
+                errorCallback(eData);
+            }
         }
     })
 };

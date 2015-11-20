@@ -30,3 +30,7 @@ window.mobileAndTabletcheck = function() {
 function isMobileVersion(){
     return mobilecheck() || $(window).width() < 1024 ;
 }
+
+function registerOnServer(){
+    PostInterface.execute(urlAPI+'client/registerClient.php', null, null, null);
+}
