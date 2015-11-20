@@ -112,3 +112,7 @@ div.page{
     color: #fefefe;
     box-shadow: 0px 0px 12px rgba(0,0,0,0.35);
 }
+div.progressBar{
+    background: #0096e0;
+    box-shadow: 0px 1px 1px rgba(0, 150, 224, 0.5);
+}

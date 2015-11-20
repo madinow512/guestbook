@@ -2,6 +2,23 @@
  * Created by Markus on 08.11.2015.
  */
 
+jQuery.fn.animateAuto = function(prop, speed, callback){
+    var elem, height, width;
+    return this.each(function(i, el){
+        el = jQuery(el), elem = el.clone().css({"height":"auto","width":"auto"}).appendTo("body");
+        height = elem.css("height"),
+            width = elem.css("width"),
+            elem.remove();
+
+        if(prop === "height")
+            el.animate({"height":height}, speed, callback);
+        else if(prop === "width")
+            el.animate({"width":width}, speed, callback);
+        else if(prop === "both")
+            el.animate({"width":width,"height":height}, speed, callback);
+    });
+}
+
 var isBluredBackground = false;
 var isMenuHovered = false;
 var isSidebarClosing = false ;
@@ -106,4 +123,10 @@ function showPopup(message){
 
 function closePopup(){
     $('.popup').animate({marginTop: -70}, 250, "easeOutSine");
+}
+
+function startProgressBar(targetTime){
+    $('.progressBar').animate({marginRight: 0}, targetTime, "linear", function(){
+        $('.progressBar').css("marginRight", "100%");
+    });
 }

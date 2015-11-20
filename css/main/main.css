@@ -42,3 +42,8 @@ html, body{
     margin-top: -70px  ;
     z-index: 2000;
 }
+
+div.progressBar{
+    height: 2px ;
+    margin-right: 100%;
+}

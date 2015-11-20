@@ -20,19 +20,24 @@ var monthNames = [
     "November", "December"
 ];
 
-function loadPublicContent(){
-    GetInterface.execute(urlAPI+'content/getPublicContent.php', null, loadFn, null);
+function loadPublicContent(limit, offset){
+    var data = {mode: 'public', limit: limit, offset: offset};
+    GetInterface.execute(urlAPI+'content/getContent.php', data, loadFn, null);
 }
 
 function loadFn(data){
+    startProgressBar(pollingIntervalTime);
     if(data){
+        contentOffset += data.length ;
         jQuery.ajaxSetup({ async: false });
-        $("#contentBoxContainer").empty();
         for(var i =0; i < data.length; i++){
             var content = data[i] ;
             $.get("templates/content/contentBox.html", '', function (template) {
 
                 template = $(template);
+
+                template.animate({opacity: 0}, 0);
+                template.animate({borderColor: '#0096e0'}, 0);
 
                 var date = Date.createFromMysql(content.created);
                 var day = date.getDate();
@@ -54,7 +59,10 @@ function loadFn(data){
                 var message = $(template.find('#contentMessage')[0]);
                 message.html(content.message.replace(/\n/g,"<br>"));
 
-                $("#contentBoxContainer").append(template);
+                $("#contentBoxContainer").prepend(template);
+
+                template.animate({opacity: 1}, 350);
+                template.animate({borderColor: '#ccc'}, 2000);
 
             });
         }
@@ -86,7 +94,6 @@ function publicContentSuccess(succData){
     $('#newcontent_info_message').removeClass('error');
     $('#newcontent_info_message').addClass('correct');
     $('#newcontent_info_message').text(succData.message);
-    loadPublicContent();
 }
 
 function publicContentError(errData){

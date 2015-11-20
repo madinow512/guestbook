@@ -1,13 +1,21 @@
+<div class="topAlignedElement autoWidthElement progressBar"></div>
 <div class="absoluteElement horizontalAlignedElement autoHeightElement centeredContent">
     <div class="autoWidthElement contentContainer simple">
         <h2>Der öffentliche Bereich</h2>
+
         <p>Beiträge im öffentlichen Bereich können von jedem gelesen werden. </p>
-        <p><a href="templates/sidebar/content/newContent_public.html"><i class="fa fa-plus"></i> Verfasse einen neuen Beitrag</a></p>
+
+        <p><a href="templates/sidebar/content/newContent_public.html"><i class="fa fa-plus"></i> Verfasse einen neuen
+            Beitrag</a></p>
     </div>
     <div id="contentBoxContainer" class="autoWidthElement contentContainer simple">
     </div>
 </div>
 
 <script>
-    loadPublicContent();
+    contentOffset = 0;
+    loadPublicContent(contentLimit, contentOffset);
+    setInterval(function () {
+        loadPublicContent(contentLimit, contentOffset);
+    }, pollingIntervalTime);
 </script>

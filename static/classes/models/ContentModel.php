@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Markus
  * Date: 19.11.2015
  * Time: 15:00
+ * @property  username
  */
 
 class ContentModel extends DatabaseModel{
@@ -14,17 +16,23 @@ class ContentModel extends DatabaseModel{
     protected static $tablename = 'content';
 
     /**
+     * @param int $limit
+     * @param int $offset
      * @return array
      */
-    public static function getPublicContent(){
-        return self::getDbAdapter()->exec("SELECT * FROM content WHERE user_id IS NULL ORDER BY created DESC", null, get_class());
+    public static function getPublicContent($limit = 10, $offset = 0){
+        $query = "SELECT * FROM content WHERE user_id IS NULL ORDER BY created ASC LIMIT $offset, $limit";
+        return self::getDbAdapter()->exec($query, null, get_class());
     }
 
     /**
+     * @param int $limit
+     * @param int $offset
      * @return array
      */
-    public static function getPrivateContent(){
-        return self::getDbAdapter()->exec("SELECT * FROM content WHERE user_id IS NOT NULL ORDER BY created DESC", null, get_class());
+    public static function getPrivateContent($limit = 10, $offset = 0){
+        $query = "SELECT * FROM content WHERE user_id IS NOT NULL ORDER BY created ASC LIMIT $offset, $limit";
+        return self::getDbAdapter()->exec($query, null, get_class());
     }
 
     /**
