@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 20. Nov 2015 um 18:00
+-- Erstellungszeit: 20. Nov 2015 um 18:02
 -- Server Version: 5.6.21
 -- PHP-Version: 5.6.3
 
@@ -19,6 +19,21 @@ SET time_zone = "+00:00";
 --
 -- Datenbank: `guestbook`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `content`
+--
+
+CREATE TABLE IF NOT EXISTS `content` (
+`id` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `title` varchar(512) NOT NULL,
+  `message` text NOT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -39,6 +54,12 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 --
+-- Indizes für die Tabelle `content`
+--
+ALTER TABLE `content`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indizes für die Tabelle `users`
 --
 ALTER TABLE `users`
@@ -48,6 +69,11 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT für exportierte Tabellen
 --
 
+--
+-- AUTO_INCREMENT für Tabelle `content`
+--
+ALTER TABLE `content`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT für Tabelle `users`
 --
