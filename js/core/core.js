@@ -31,6 +31,33 @@ function isMobileVersion(){
     return mobilecheck() || $(window).width() < 1024 ;
 }
 
+/**
+ * registers the client on the server whenever accessing a new site with an asynchronous
+ * interval running in the background
+ */
 function registerOnServer(){
     PostInterface.execute(urlAPI+'client/registerClient.php', null, null, null);
+}
+
+/**
+ * converts a timestamp-formatted date from database to a UNIX-like time format
+ * @param mysql_string
+ * @returns {*}
+ */
+Date.createFromMysql = function (mysql_string) {
+    var t, result = null;
+    if (typeof mysql_string === 'string') {
+        t = mysql_string.split(/[- :]/);
+        //when t[3], t[4] and t[5] are missing they defaults to zero
+        result = new Date(t[0], t[1] - 1, t[2], t[3] || 0, t[4] || 0, t[5] || 0);
+    }
+    return result;
+}
+
+/**
+ * quits all intervals running in the background asynchronously
+ */
+function quitAllAsyncIntervals(){
+    clearInterval(privatePollInterval);
+    clearInterval(publicPollInterval);
 }

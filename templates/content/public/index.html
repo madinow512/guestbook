@@ -9,14 +9,19 @@
             Beitrag</a></p>
     </div>
     <div id="contentBoxContainer" class="autoWidthElement contentContainer simple">
+        <p class="invisible" id="no_message_info"><i>- Es wurden noch keine Beiträge in diesem Bereich verfasst -</i></p>
     </div>
 </div>
 
 <script>
+    quitAllAsyncIntervals();
     registerOnServer();
     contentOffset = 0;
-    loadPublicContent(contentLimit, contentOffset);
-    setInterval(function () {
-        loadPublicContent(contentLimit, contentOffset);
+    contentInitialLoad = true ;
+    /* fetch everything initially */
+    loadPublicContent(Math.pow(2, 53) - 1);
+    /* then set interval for periodically fetching */
+    publicPollInterval = setInterval(function () {
+        loadPublicContent(contentLimit);
     }, pollingIntervalTime);
 </script>

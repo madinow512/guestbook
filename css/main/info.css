@@ -1,0 +1,25 @@
+div.centeredContent > div.overview{
+    right: 0;
+    margin-right: 10%;
+    width: 350px ;
+    background: red;
+    position: fixed;
+    display: inline;
+}
+/*
+div.centeredContent > div.contentContainer{
+    padding-right: 350px;
+}
+*/
+div.infoImage{
+    background-size: auto;
+}
+div.infoImage > img{
+    visibility: hidden;
+}
+#er_diagram {
+    background: url("../../graphics/documentation/er.PNG") no-repeat center;
+}
+div.smaller {
+    width: 55%;
+}

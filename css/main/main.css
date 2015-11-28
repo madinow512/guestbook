@@ -1,6 +1,7 @@
 @import "menu.css";
 @import "content.css";
 @import "sidebar.css";
+@import "info.css";
 
 html, body{
     font-family: 'Open Sans', sans-serif;
@@ -46,4 +47,6 @@ html, body{
 div.progressBar{
     height: 2px ;
     margin-right: 100%;
+    position: fixed;
+    z-index: 1000;
 }

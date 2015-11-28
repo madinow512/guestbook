@@ -1,34 +1,55 @@
-
-<div class="absoluteElement autoHeightElement fullPageContainer">
+<script>
+    quitAllAsyncIntervals();
+</script>
+<div class="absoluteElement horizontalAlignedElement autoHeightElement centeredContent smaller">
+    <!--<div class="autoHeightElement overview"></div>-->
     <div class="autoWidthElement contentContainer">
-        <h3>Hello World</h3>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
-        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-        praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
-        consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-        aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-        molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
-        qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        <h2>Das Gästebuch</h2>
+        Diese Seite dient als Dokumentation des hier vorliegenden Studienprojektes.<br>
+        Zunächst soll die Aufgabenstellung umrissen und das daraus resultierende Konzept vorgestellt werden.
+        Anschließend werden die einzelnen Komponenten dieser Web-Applikation und deren technischen Details erläutert.
     </div>
-    <div class="autoWidthElement contentContainer">
-        <h3>A text about me</h3>
-        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat,
-        et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata
-        ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+    <div class="autoWidthElement contentContainer simple">
+        <h3>Die Aufgabenstellung</h3>
+        Im Rahmen des Praktikums der Veranstaltung <i>Verteilte Systeme</i> des Studienganges <i>Medien- und
+        Kommunikationsinformatik</i> der Hochschule Reutlingen soll ein Gästebuch entwickelt werden, welches die Möglichkeit bietet, Beiträge zu
+        lesen und  zu verfassen.<br>
+        Um die verfassten Beiträge dauerhaft speichern zu können, soll eine MySQL-Datenbank verwendet, der Server in PHP
+        implementiert und das Frontend unter Verwendung von HTML, JavaScript und CSS realisiert werden.
+        Die Kommunikation zwischen Client und Server soll dabei basierend auf AJAX im JSON-Format erfolgen.
+    </div>
+    <div class="autoWidthElement contentContainer simple">
+        <h3>Das Konzept</h3>
+        Dieses Gästebuch stellt eine sogenannte <i>Single Page Applikation</i> dar. Die gesamte Navigation sowie sämtliche Aktionen
+        laufen dabei innerhalb der Seite ab, ohne dass ein erneutes Laden der Seite erforderlich ist.
+        Gesamt setzt sich die Seite aus drei Hauptelementen zusammen: Für die Navigationen zwischen den einzelnen Seiteninhalten
+        existiert eine Navigationsleiste am linken Rand. Die verschiedenen Inhalte werden im Hauptbereich in der Mitte
+        der Seite dargestellt. Für alle weiteren Optionen und Aktionen wie beispielsweise die Registrierung oder die Anmeldung
+        gibt es die sogenannte Sidebar, die sich vom rechten Rand der Seite her öffnet. Der Fokus bei diesem Entwurf liegt dabei auf
+        der Benutzerfreundlichkeit der Applikation: Es soll immer nur der Inhalt angezeigt werden, der für den Benutzer gerade im Moment
+        von Interesse ist - alles andere wird konsequent ausgeblendet!
+        <br>
+        Des Weiteren verfügt das Gästebuch über zwei unterschiedliche Bereiche. Im öffentlichen Bereich kann jeder Benutzer anonym unter
+        Verwendung eines temporären Benutzernamens neue Beiträge verfassen. Beiträge in diesem Bereich können von jedem gelesen werden,
+        der die Seite aufruft. Zum privaten Bereich haben dagegen lediglich registrierte Mitglieder Zugang. Beiträge in diesem Bereich können von
+        nicht angemeldeten Benutzern nicht eingesehen werden. Für die Registrierung werden ein noch nicht verwendeter Benutzername sowie ein
+        Passwort benötigt.<br>
+    </div>
+    <div class="autoWidthElement contentContainer simple">
+        <h3>Die Datenbank</h3>
+        Die Datenbank besteht aus zwei Tabellen: Die Tabelle <i>users</i> beinhaltet alle Informationen über registrierte Mitglieder, wohingegen
+        <i>content</i> der Speicherung aller verfassten Beiträge dient. Dabei werden sowohl Beiträge aus dem öffentlichen als auch solche aus
+        dem privaten Bereich in dieser Tabelle abgelegt.
+        <div class="infoImage autoWidthElement" id="er_diagram">
+            <img src="../../../graphics/documentation/er.PNG">
+        </div>
+        Die Unterscheidung, welchem Bereich ein Beitrag angehört, geschieht über die
+        angehängten Benutzerinformationen. Da private Beiträge nur von registrierten Benutzern verfasst werden können, wird bei diesen
+        eine gültige <i>User ID</i> in der Datenbank hinterlegt. Bei öffentlichen Beiträgen kann keine User ID gesetzt werden, da diese
+        von anonymen Benutzern erstellt werden. Daher wird hier direkt der temporäre Benutzername des Erstellers gespeichert, die User ID wird
+        auf den Wert <i>NULL</i> gesetzt.<br>
+    </div>
+    <div class="autoWidthElement contentContainer simple">
+        <h3>Der Server</h3>
     </div>
 </div>

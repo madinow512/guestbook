@@ -1,12 +1,36 @@
 <script>
+    quitAllAsyncIntervals();
     checkLoginStatus(function () {
         $('#nav_signout').removeClass('invisible');
+
+        registerOnServer();
+        contentOffset = 0;
+        contentInitialLoad = true ;
+        /* fetch everything initially */
+        loadPrivateContent(Math.pow(2, 53) - 1);
+        /* then set interval for periodically fetching */
+        privatePollInterval = setInterval(function () {
+            loadPrivateContent(contentLimit);
+        }, pollingIntervalTime);
+
     }, function () {
-        $('.contentContainer').load('templates/content/noAccess.html');
+        $('#general').load('templates/content/noAccess.html');
     });
 </script>
-<div class="absoluteElement autoHeightElement fullPageContainer">
-    <div class="autoWidthElement contentContainer">
+
+<div class="topAlignedElement autoWidthElement progressBar"></div>
+<div class="absoluteElement horizontalAlignedElement autoHeightElement centeredContent">
+    <div class="autoWidthElement contentContainer simple" id="general">
+        <h2>Der private Bereich</h2>
+
+        <p>Beiträge im privaten Bereich können nur von registrierten Mitgliedern gelesen werden. </p>
+
+        <p><a href="templates/sidebar/content/newContent_private.html"><i class="fa fa-plus"></i> Verfasse einen neuen
+            Beitrag</a></p>
+    </div>
+    <div id="contentBoxContainer" class="autoWidthElement contentContainer simple">
+
+        <p class="invisible" id="no_message_info"><i>- Es wurden noch keine Beiträge in diesem Bereich verfasst -</i></p>
 
     </div>
 </div>

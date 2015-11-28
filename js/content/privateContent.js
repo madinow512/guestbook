@@ -2,15 +2,15 @@
  * Created by Markus on 19.11.2015.
  */
 
-function loadPublicContent(limit, offset, prepend) {
+function loadPrivateContent(limit, offset, prepend) {
     prependContent = typeof prepend !== 'undefined' ? prepend : true;
     var c_offset = typeof offset !== 'undefined' ? offset : 0;
-    var data = {mode: 'public', limit: limit, offset: c_offset};
+    var data = {mode: 'private', limit: limit, offset: c_offset};
     startProgressBar(pollingIntervalTime);
-    GetInterface.execute(urlAPI + 'content/getContent.php', data, loadPublicFn, null);
+    GetInterface.execute(urlAPI + 'content/getContent.php', data, loadPrivateFn, null);
 }
 
-function loadPublicFn(data) {
+function loadPrivateFn(data) {
 
     if ((!data || data.length) <= 0 && contentInitialLoad) {
         $('#no_message_info').removeClass('invisible');
@@ -25,6 +25,7 @@ function loadPublicFn(data) {
 
         for (var i = 0; i < data.length; i++) {
             var content = data[i];
+            console.log(content);
             $.get("templates/content/contentBox.html", '', function (template) {
 
                 template = $(template);
@@ -63,6 +64,8 @@ function loadPublicFn(data) {
 
             });
         }
+
+
         /*
          * Including a scroll function for auto-loading older content when scrolled to the bottom of the page
          * => currently nor working due to offset value for database ...
@@ -86,30 +89,27 @@ function loadPublicFn(data) {
     contentInitialLoad = false;
 }
 
-function createPublicContent() {
-    var username = $('#newcontent_username').val();
+function createPrivateContent() {
     var title = $('#newcontent_title').val();
     var message = $('#newcontent_message').val();
-    $('#newcontent_error_username').addClass('invisible');
     $('#newcontent_error_title').addClass('invisible');
     $('#newcontent_error_message').addClass('invisible');
-    var check = checkValues([username, title, message]);
+    var check = checkValues([title, message]);
     if (check.correct) {
-        doCreatePublicContent(username, title, message);
+        doCreatePrivateContent(title, message);
     } else {
-        handleIncorrectPublicContent(check);
+        handleIncorrectPrivateContent(check);
     }
 }
 
-function doCreatePublicContent(username, title, message) {
+function doCreatePrivateContent(title, message) {
     PostInterface.execute(urlAPI + 'content/newContent.php', {
-        username: username,
         title: title,
         message: message
-    }, publicContentSuccess, publicContentError);
+    }, privateContentSuccess, privateContentError);
 }
 
-function publicContentSuccess(succData) {
+function privateContentSuccess(succData) {
     showPopup(succData.message);
     closeSidebar();
     $('#newcontent_info_message').removeClass('error');
@@ -117,19 +117,16 @@ function publicContentSuccess(succData) {
     $('#newcontent_info_message').text(succData.message);
 }
 
-function publicContentError(errData) {
+function privateContentError(errData) {
     console.log("error", errData);
 }
 
-function handleIncorrectPublicContent(check) {
+function handleIncorrectPrivateContent(check) {
     if (!check.correct) {
         if (!check[0]) {
-            $('#newcontent_error_username').removeClass('invisible');
-        }
-        if (!check[1]) {
             $('#newcontent_error_title').removeClass('invisible');
         }
-        if (!check[2]) {
+        if (!check[1]) {
             $('#newcontent_error_message').removeClass('invisible');
         }
     }
