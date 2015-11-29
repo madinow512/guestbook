@@ -11,14 +11,12 @@ div.centeredContent > div.contentContainer{
     padding-right: 350px;
 }
 */
-div.infoImage{
-    background-size: auto;
-}
-div.infoImage > img{
-    visibility: hidden;
-}
-#er_diagram {
-    background: url("../../graphics/documentation/er.PNG") no-repeat center;
+div.centeredContent  > div.contentContainer > img{
+    max-width: 100%;
+    left:0; right: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 0 12px 0;
 }
 div.smaller {
     width: 55%;
