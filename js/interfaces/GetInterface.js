@@ -21,7 +21,7 @@ GetInterface.execute = function(url, data, successCallback, errorCallback){
         },
         success: function(sData){
             if(successCallback){
-                successCallback(sData);
+                successCallback(JSON.parse(sData.data));
             }
         },
         error: function(eData){

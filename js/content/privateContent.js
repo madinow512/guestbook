@@ -25,7 +25,6 @@ function loadPrivateFn(data) {
 
         for (var i = 0; i < data.length; i++) {
             var content = data[i];
-            console.log(content);
             $.get("templates/content/contentBox.html", '', function (template) {
 
                 template = $(template);

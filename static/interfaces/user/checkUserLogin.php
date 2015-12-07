@@ -8,4 +8,6 @@
 
 require_once '../../initApplication.php';
 
-print json_encode(CustomSessionHandler::doesSessionParamExist(USER));
+$loggedIn = CustomSessionHandler::doesSessionParamExist(USER);
+
+Core::sendHTTPResponse(200, "", $loggedIn);

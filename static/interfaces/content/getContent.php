@@ -39,7 +39,7 @@ if(isset($_GET['mode'])){
             CustomSessionHandler::bindNewSessionParam(LATEST_CONTENT, $contents[0]->getID());
         }
     }
-    print json_encode($results);
+    print Core::sendHTTPResponse(200, "", json_encode($results));
 }else{
     Core::sendHTTPResponse(400, "Es ist ein Fehler beim Laden der Beiträge aufgetreten.");
 }

@@ -69,21 +69,21 @@
         funktionieren dabei auf Grundlage von <i>Reflection</i>. Hierdurch kann auch auf Attribute, die erst dynamisch zur Laufzeit gesetzt werden,
         zugegriffen und diese so in der Datenbank gespeichert werden. Die nachfolgende Abbildung gibt einen Überblick über die eben beschriebenen Methoden.
         <img src="../../../graphics/documentation/db2.PNG">
-        Alle weiteren Models erben vom DatabaseModel und nutzen die Methoden dieser Klasse. Abgesehen davon verfügt jedes Model über individuelle
+        Alle weiteren Models erben vom DatabaseModel und nutzen die Methoden dieser Klasse. Darüber hinaus verfügt jedes Model über individuelle
         Getter und Setter für die einzelnen model-spezifischen Attribute.
         <h4>Schnittstellen</h4>
         Die Schnittstellen (Interfaces) dienen als Kommunikationspunkt zwischen Server und Client. Entsprechend der HTTP-Methode, den übergebenen Parametern und deren
         Gültigkeit werden die Anfragen des Frontends hier verarbeitet und Antworten im JSON-Format zurückgeschickt. Die nachfolgende Abbildung illustriert
         diese Funktionsweise anhand der Anmelde-Schnittstelle.
         <img src="../../../graphics/documentation/interface1.PNG">
-        Zunächst wird das <i>initApplication</i>-Skript eingebunden. Dieses wird in jeder Schittstelle benötigt, um die <i>Application</i> und deren integrierten
+        Zunächst wird das <i>initApplication</i>-Skript eingebunden. Dieses wird in jeder Schnittstelle benötigt, um die <i>Application</i> und deren integrierten
         <i>Autoloader</i> nutzen zu können. Auf diese Weise muss ab diesem Zeitpunkt nicht mehr jedes verwendete Skript händisch eingebunden werden.
         Anschließend wird geprüft, ob es sich um die korrekte HTTP-Methode handelt und die erforderlichen Parameter alle gesetzt sind. Im Falle des Anmeldevorganges
         muss es sich um eine Anfrage via HTTP-Post handeln. Es werden der Benutzername und das Passwort benötigt. Sind diese korrekt eingegangen, wird überprüft, ob
         ein Benutzer mit dem angegebenen Benutzernamen existiert. Dies geschieht über den Aufruf der dafür zuständigen statischen Methode des <i>UserModels</i>.
         Existiert kein Benutzer mit diesem Namen, wird - wie in jedem anderen Fehlerfall - eine Antwort mit dem <i>HTTP-Statuscode</i> 400
         (client-seitiger Fehler, zum Beispiel durch fehlerhafte Eingabe) und einer optionalen Fehlermeldung an den Client zurückgesendet.
-        Ist der Benutzer dem System bekannt, wird das dazugörige UserModel geladen und das eingegebene Passwort mit dem in der Datenbank hinterlegten verglichen.
+        Ist der Benutzer dem System bekannt, wird das dazugehörige UserModel geladen und das eingegebene Passwort mit dem in der Datenbank hinterlegten verglichen.
         Selbstverständlich erfolgt dies in verschlüsselter Form. Zuständig für die Verschlüsselung und die Prüfung verschlüsselter Passwörter ist die
         statische Klasse <i>PassHash</i>. War die Passworteingabe ebenfalls korrekt, so hat sich der Benutzer erfolgreich angemeldet. Der Zeitpunkt der
         letzten Anmeldung wird in der Datenbank aktualisiert und die <i>Session</i> des Benutzers aktiviert. Im letzten Schritt wird eine Willkommensnachricht
@@ -95,5 +95,56 @@
 
     <div class="autoWidthElement contentContainer simple">
         <h3>Der Client</h3>
+            Wie der Server gliedert sich auch der Client in mehrere Komponenten: So gibt es client-seitige Schnittstellen (Interfaces), die zur Kommunikation
+        über HTTP-Methoden mit dem Server dienen, Skripte, die die Navigation auf der Seite sowie Animationen regeln und zuletzt HTML-Dateien,
+        die über AJAX in die entsprechenden Bereiche der Seite eingebunden und unter Verwendung von CSS grafisch gestaltet werden.<br>
+        Die gesamte in JavaScript realisierte Funktionalität wird dabei durch den Einsatz von <i>jQuery</i> unterstützt.
+        <h4>Schnittstellen</h4>
+        Auf Seite des Clients existieren Schnittstellen für <i>HTTP-Get</i> und <i>HTTP-Post</i>. Diese rufen über AJAX eine bestimmte URL auf und senden
+        optional ein Datenpaket im JSON-Format an den Server. Bei der URL handelt es sich um den Pfad zur entsprechenden Schnittstelle des Servers.
+        Außerdem kann über die Parameter jeweils eine Funktion für den Erfolgsfall und den Fehlerfall der asynchonen Anfrage als sogenannte <i>Callback</i>-Funktion
+        definiert werden. Das Ergebnis des Servers trifft in beiden Fällen wiederum im JSON-Format ein und kann anschließend in den Callback-Methoden
+        interpretiert und weiterverarbeitet werden. Die nachfolgende Abbildung zeigt die Schnittstelle des Client zur Kommunikation mit dem Server über HTTP-Post.
+        Das Interface für HTTP-Get funktioniert auf dieselbe Weise. Lediglich das Attribut <i>method</i> beinhaltet anstatt <i>"post"</i> den Wert <i>"get"</i>.
+        <img src="../../../graphics/documentation/interface3.PNG">
+        Diese Schnittstellen können dann, wie in der nachfolgenden Abbildung zu sehen ist, beispielsweise für die Anmeldung eines Benutzers verwendet werden.
+        In der Methode <i>performLogin()</i> werden zunächst der Benutzername und das Passwort aus dem Anmeldeformular ausgelesen und auf Korrektheit bzw.
+        Vollständigkeit geprüft. Ist die Prüfung erfolgreich, kann der Anmeldeprozess über <i>doLogin()</i> und HTTP-Post gestartet werden.
+        Die Methode <i>execute()</i> des PostInterface erhält dabei zwei Callback-Funktionen als Parameter, die auf die Antwort des Servers entsprechend reagieren
+        und passende Meldungen in der Benutzeroberfläche des Client ausgeben.
+        <img src="../../../graphics/documentation/interface4.PNG">
+        Neben den Interfaces existieren noch andere JavaScript-Dateien, wie beispielsweise die für die Navigation. Die in der nachfolgenden Abbildung dargestellte
+        Funktion weist jedem Link auf der Seite ein <i>onClick</i>-Ereignis zu. Je nach Typ des Links wird das verlinkte HTML-Dokument entweder in den Hauptbereich
+        in der Mitte der Seite oder in die Sidebar eingebunden.
+        <img src="../../../graphics/documentation/nav1.PNG">
+        <h4>HTML Templates</h4>
+        Die HTML-Dateien gliedern sich ihrerseits wiederum in <i>components</i>, <i>sidebar</i> und <i>content</i>. <i>Components</i> bilden das Grundgerüst
+        der Seite. Hierzu zählen unter anderem die Sidebar als Element selbst, das Menü am linken Rand sowie der Header, der alle CSS- und JavaScrip-Dateien
+        einbindet. Bei <i>content</i> handelt es sich um alle Unterseiten, die direkt im Hauptbereich in der Seite eingebunden werden, so wie beispielsweise
+        diese Dokumentationsseite. Als einfaches Beispiel für ein solches HTML Template wird in der nachfolgenden Abbildung das Anmeldeformular gezeigt, das bei
+        Klick auf diverse Links in die Sidebar eingebunden wird.
+        <img src="../../../graphics/documentation/templ1.PNG">
+        Das Formular setzt sich aus zwei Eingabefeldern und einem Button zusammen. Die Eingabefelder für Benutzername und Passwort verfügen jeweils über einen <i>Placeholder</i>,
+        um dem Benutzer anzuzeigen, was in das jeweilige Feld einzutragen ist. Außerdem gehört zu jedem Eingabefeld ein standardmäßig unsichtbares Feld mit
+        einer entsprechenden Fehlermeldung. Wurde die Anmeldung z.B. aufgrund einer fehlerhaften Eingabe des Benutzers nicht korrekt durchgeführt, werden die
+        jeweiligen Fehlermeldungen in der entsprechenden JavaScriptt-Funktion eingeblendet. Bei Klick auf den <i>"anmelden"</i>-Button wird letztendlich die
+        <i>performLogin()</i>-Methode aufgerufen. Deren Funktionalität wurde im vorhergehenden Abschitt bereits erläutert.
+        <h4>Polling - Asynchrone Aktualisierung der Beiträge</h4>
+        Für das Laden und Anzeigen der Beiträge wird <i>Polling</i> verwendet. Die nachfolgende Abbildung illustriert das Prinzip, das sowohl für die privaten als die
+        öffentlichen Beiträge verwendet wird.
+        <img src="../../../graphics/documentation/poll.PNG">
+        Zunächst werden alle asynchonen Ladefunktionen beendet, die eventuell noch im Hintergrund aktiv sind. Anschließend findet eine Registrierung des Clients
+        auf dem Server statt. Tatsächlich handelt es sich dabei server-seitig nur um die Initialisierung eines neuen Session-Parameters, der dazu dient, dass
+        tatsächlich nur die neusten und nicht etwa immer wieder alle Beiträge geladen werden. Zu Beginn werden alle Beiträge einmal geladen. Bei <i>Math.pow(2, 53) - 1</i>
+        handelt es sich um den größtmöglichen Integer-Wert; dieser wird als Limit für die spätere server-seitige Datenbankabfrage verwendet. Somit kann angegeben werden,
+        wie viele Beiträge maximal auf einmal geladen werden sollen.
+        Ab diesem Zeitpunkt läuft die Ladefunktion in einem festen Intervall ab und aktualisiert die Beiträge im Abstand von <i>pollingIntervalTime</i> Millisekunden.
+        Der blaue Balken am oberen Rand der Seite fungiert dabei als eine Art "virtuelle Sanduhr": Ist der Balken durchgelaufen, werden die Inhalte
+        aktualisiert.
+        <img src="../../../graphics/documentation/poll1.PNG">
+        Sind neue Beiträge verfügbar, so werden diese via jQuery in das dafür vorgesehene Template <i>contentBox.html</i> geladen und das daraus resultierende
+        jQuery-Objekt durch Aufruf der Methode <i>prepend</i> den anderen Beiträgen vorangestellt. Eine Animation der Transparenz und der Umrandung sowie
+        das Erscheinen des Popup-Fensters am oberen Rand weisen den Benutzer visuell darauf hin, dass neue Beiträge geladen wurden.
+        <img src="../../../graphics/documentation/poll2.PNG">
     </div>
 </div>
