@@ -73,10 +73,18 @@ function createPublicContent(){
     var username = $('#newcontent_username').val();
     var title = $('#newcontent_title').val();
     var message = $('#newcontent_message').val();
+
     $('#newcontent_error_username').addClass('invisible');
     $('#newcontent_error_title').addClass('invisible');
     $('#newcontent_error_message').addClass('invisible');
     var check = checkValues([username, title, message]);
+
+    res = message.split(" ");
+    if(res.length > 10000){
+        check[3] = false ;
+        check.correct = false ;
+    }
+
     if(check.correct){
         doCreatePublicContent(username, title, message);
     }else{
@@ -111,5 +119,12 @@ function handleIncorrectPublicContent(check){
         if(!check[2]){
             $('#newcontent_error_message').removeClass('invisible');
         }
+
+        if(!check[3]){
+            $('#newcontent_info_message').addClass('error');
+            $('#newcontent_info_message').removeClass('correct');
+            $('#newcontent_info_message').html("Du hast zu viele Wörter eingegeben. Es sind maximal 10.000 Wörter zulässig.");
+        }
+
     }
 }

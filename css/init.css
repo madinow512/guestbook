@@ -1,6 +1,8 @@
+@charset "utf-8";
+
 @import "font-awesome.min.css";
 @import "normalize.css";
 @import "madNormalize.css";
 @import "main/main.css";
 @import "theme/blue/main.css";
-@import "res/res_init.css"
+@import "res/res_init.css";
