@@ -10,4 +10,4 @@ require_once '../../initApplication.php' ;
 
 CustomSessionHandler::bindNewSessionParam(LATEST_CONTENT, -1);
 
-print json_encode(array());
+Core::sendHTTPResponse(200, "", array());

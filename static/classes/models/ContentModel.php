@@ -32,7 +32,11 @@ class ContentModel extends DatabaseModel{
      */
     public static function getPrivateContent($limit = 10, $offset = 0){
         $query = "SELECT * FROM content WHERE user_id IS NOT NULL ORDER BY created DESC LIMIT $offset, $limit";
-        return self::getDbAdapter()->exec($query, null, get_class());
+        $data = self::getDbAdapter()->exec($query, null, get_class());
+        foreach($data as $content){
+            $content->setUsername(UserModel::getUserByID($content->getUserID())->getUsername());
+        }
+        return $data;
     }
 
     /**

@@ -1,24 +1,6 @@
 /**
  * Created by Markus on 19.11.2015.
  */
-Date.createFromMysql = function(mysql_string)
-{
-    var t, result = null;
-    if( typeof mysql_string === 'string' )
-    {
-        t = mysql_string.split(/[- :]/);
-        //when t[3], t[4] and t[5] are missing they defaults to zero
-        result = new Date(t[0], t[1] - 1, t[2], t[3] || 0, t[4] || 0, t[5] || 0);
-    }
-    return result;
-}
-
-var monthNames = [
-    "January", "February", "March",
-    "April", "May", "June", "July",
-    "August", "September", "October",
-    "November", "December"
-];
 
 function loadPublicContent(limit, offset){
     var data = {mode: 'public', limit: limit, offset: offset};
@@ -78,8 +60,7 @@ function createPublicContent(){
     $('#newcontent_error_title').addClass('invisible');
     $('#newcontent_error_message').addClass('invisible');
     var check = checkValues([username, title, message]);
-
-    res = message.split(" ");
+    var res = message.split(" ");
     if(res.length > 10000){
         check[3] = false ;
         check.correct = false ;
@@ -87,16 +68,20 @@ function createPublicContent(){
 
     if(check.correct){
         doCreatePublicContent(username, title, message);
-    }else{
+    } else {
         handleIncorrectPublicContent(check);
     }
 }
 
-function doCreatePublicContent(username, title, message){
-    PostInterface.execute(urlAPI+'content/newContent.php', {username: username, title: title, message: message}, publicContentSuccess, publicContentError);
+function doCreatePublicContent(username, title, message) {
+    PostInterface.execute(urlAPI + 'content/newContent.php', {
+        username: username,
+        title: title,
+        message: message
+    }, publicContentSuccess, publicContentError);
 }
 
-function publicContentSuccess(succData){
+function publicContentSuccess(succData) {
     showPopup(succData.message);
     closeSidebar();
     $('#newcontent_info_message').removeClass('error');
@@ -104,19 +89,19 @@ function publicContentSuccess(succData){
     $('#newcontent_info_message').text(succData.message);
 }
 
-function publicContentError(errData){
+function publicContentError(errData) {
     console.log("error", errData);
 }
 
-function handleIncorrectPublicContent(check){
-    if(!check.correct){
-        if(!check[0]){
+function handleIncorrectPublicContent(check) {
+    if (!check.correct) {
+        if (!check[0]) {
             $('#newcontent_error_username').removeClass('invisible');
         }
-        if(!check[1]){
+        if (!check[1]) {
             $('#newcontent_error_title').removeClass('invisible');
         }
-        if(!check[2]){
+        if (!check[2]) {
             $('#newcontent_error_message').removeClass('invisible');
         }
 

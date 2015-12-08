@@ -1,0 +1,47 @@
+<script>
+    checkLoginStatus(function(){
+        GetInterface.execute(urlAPI+'user/getUser.php', null, function(data){
+            $('#newcontent_username').val(data.username);
+            $('#newcontent_username').attr('readonly', true);
+        }, null);
+    }, null)
+</script>
+
+<div class="absoluteElement fullPageContainer">
+    <div class="contentContainer">
+        <h2>Neuen Beitrag verfassen</h2>
+        <p id="newcontent_info_message">Hier kannst Du einen neuen Beitrag verfassen.</p>
+        <form>
+            <table class="fullsize">
+                <tr>
+                    <td class="rightTableCol">
+                        <input type="text" id="newcontent_title" value="" placeholder="titel"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="error invisible" id="newcontent_error_title">
+                        Bitte gib einen Titel für Deinen Beitrag ein.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rightTableCol">
+                       <textarea id="newcontent_message" value="" placeholder="Deine Nachricht ..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="error invisible" id="newcontent_error_message">
+                        Bitte gib einen Text für Deinen Beitrag ein.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rightTableCol">
+                        <input type="button" id="newcontent_submit" value="abschicken" onclick="createPrivateContent();"/>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

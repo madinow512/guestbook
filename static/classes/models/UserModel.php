@@ -3,7 +3,7 @@
 /**
  * Created by PhpStorm.
  * User: MADinow512
- * Date: 16.11.2015
+ * Date: 16.11.2015
  * Time: 12:03
  * @property  password
  */
@@ -17,14 +17,20 @@ class UserModel extends DatabaseModel
      *
      */
     public static function getUserByID($id){
-        return array_pop(self::getDbAdapter()->exec("SELECT * FROM ".self::$tablename." WHERE id = ?", array($id), get_class()));
+		$db = self::getDbAdapter();
+		$arr = $db->exec("SELECT * FROM ".self::$tablename." WHERE id = ?", array($id), get_class());
+		$res = array_pop($arr);
+        return $res ;
     }
 
     /**
      * @return UserModel
      */
     public static function getUserByName($username){
-        return array_pop(self::getDbAdapter()->exec("SELECT * FROM ".self::$tablename." WHERE username = ?", array($username), get_class()));
+		$db = self::getDbAdapter();
+		$arr = $db->exec("SELECT * FROM ".self::$tablename." WHERE username = ?", array($username), get_class());
+		$res = array_pop($arr); 
+        return $res ; 
     }
 
     /**

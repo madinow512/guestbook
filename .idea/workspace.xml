@@ -22,16 +22,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="init.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/init.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+=======
+      <file leaf-file-name="checkUserLogin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/interfaces/user/checkUserLogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.13178295" vertical-offset="0" max-vertical-offset="903">
+              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="publicContent.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/content/publicContent.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,6 +49,14 @@
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
               </folding>
+=======
+      <file leaf-file-name="CustomSessionHandler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/classes/lib/CustomSessionHandler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-28.538462" vertical-offset="40" max-vertical-offset="969">
+              <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+              <folding />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
             </state>
           </provider>
         </entry>
@@ -49,6 +66,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/user/register.js" />
         <option value="$PROJECT_DIR$/js/user/signout.js" />
@@ -57,6 +75,9 @@
         <option value="$PROJECT_DIR$/css/theme/blue/res/res_theme_init.css" />
         <option value="$PROJECT_DIR$/css/res/res_init.css" />
         <option value="$PROJECT_DIR$/css/theme/blue/res/smaller_1024.css" />
+=======
+        <option value="$PROJECT_DIR$/css/init.css" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         <option value="$PROJECT_DIR$/css/main/menu.css" />
         <option value="$PROJECT_DIR$/css/res/smaller_1024.css" />
         <option value="$PROJECT_DIR$/templates/sidebar/content/newContent.html" />
@@ -64,12 +85,10 @@
         <option value="$PROJECT_DIR$/static/classes/models/UserModel.php" />
         <option value="$PROJECT_DIR$/static/interfaces/user/register.php" />
         <option value="$PROJECT_DIR$/static/interfaces/user/login.php" />
-        <option value="$PROJECT_DIR$/templates/content/private/index.html" />
         <option value="$PROJECT_DIR$/js/user/checkLoginStatus.js" />
         <option value="$PROJECT_DIR$/js/navigation.js" />
         <option value="$PROJECT_DIR$/templates/components/menu.html" />
         <option value="$PROJECT_DIR$/static/interfaces/content/getPublicContent.php" />
-        <option value="$PROJECT_DIR$/js/interfaces/GetInterface.js" />
         <option value="$PROJECT_DIR$/css/theme/blue/content.css" />
         <option value="$PROJECT_DIR$/static/interfaces/content/newContent.php" />
         <option value="$PROJECT_DIR$/js/user/signin.js" />
@@ -78,20 +97,21 @@
         <option value="$PROJECT_DIR$/templates/sidebar/content/newContent_public.html" />
         <option value="$PROJECT_DIR$/js/lib/jquery.animate-shadow.min.js" />
         <option value="$PROJECT_DIR$/templates/content/contentBox.html" />
-        <option value="$PROJECT_DIR$/templates/components/header.html" />
         <option value="$PROJECT_DIR$/css/main/content.css" />
         <option value="$PROJECT_DIR$/js/animation.js" />
-        <option value="$PROJECT_DIR$/css/main/main.css" />
-        <option value="$PROJECT_DIR$/css/theme/blue/main.css" />
-        <option value="$PROJECT_DIR$/static/classes/models/ContentModel.php" />
         <option value="$PROJECT_DIR$/static/interfaces/client/registerClientForPublicContent.php" />
-        <option value="$PROJECT_DIR$/js/events.js" />
         <option value="$PROJECT_DIR$/static/classes/lib/ClientManager.php" />
         <option value="$PROJECT_DIR$/static/classes/lib/Client.php" />
         <option value="$PROJECT_DIR$/static/classes/lib/CustomSessionHandler.php" />
+        <option value="$PROJECT_DIR$/js/interfaces/PostInterface.js" />
+        <option value="$PROJECT_DIR$/js/init.js" />
+        <option value="$PROJECT_DIR$/templates/components/header.html" />
+        <option value="$PROJECT_DIR$/templates/content/private/access.html" />
+        <option value="$PROJECT_DIR$/css/main/sidebar.css" />
+        <option value="$PROJECT_DIR$/templates/sidebar/content/newContent_private.html" />
         <option value="$PROJECT_DIR$/js/core/settings.js" />
-        <option value="$PROJECT_DIR$/static/interfaces/client/registerClient.php" />
         <option value="$PROJECT_DIR$/js/core/core.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/js/interfaces/PostInterface.js" />
         <option value="$PROJECT_DIR$/static/interfaces/content/getContent.php" />
         <option value="$PROJECT_DIR$/js/init.js" />
@@ -100,6 +120,25 @@
         <option value="$PROJECT_DIR$/css/lib/strength.css" />
         <option value="$PROJECT_DIR$/css/init.css" />
         <option value="$PROJECT_DIR$/js/content/publicContent.js" />
+=======
+        <option value="$PROJECT_DIR$/templates/content/public/index.html" />
+        <option value="$PROJECT_DIR$/templates/content/private/index.html" />
+        <option value="$PROJECT_DIR$/js/content/publicContent.js" />
+        <option value="$PROJECT_DIR$/js/events.js" />
+        <option value="$PROJECT_DIR$/static/classes/models/ContentModel.php" />
+        <option value="$PROJECT_DIR$/css/theme/blue/main.css" />
+        <option value="$PROJECT_DIR$/css/main/main.css" />
+        <option value="$PROJECT_DIR$/css/main/info.css" />
+        <option value="$PROJECT_DIR$/static/interfaces/content/getContent.php" />
+        <option value="$PROJECT_DIR$/static/interfaces/client/registerClient.php" />
+        <option value="$PROJECT_DIR$/js/content/privateContent.js" />
+        <option value="$PROJECT_DIR$/static/classes/lib/Application.php" />
+        <option value="$PROJECT_DIR$/static/initApplication.php" />
+        <option value="$PROJECT_DIR$/static/info.php" />
+        <option value="$PROJECT_DIR$/js/interfaces/GetInterface.js" />
+        <option value="$PROJECT_DIR$/templates/content/info/index.html" />
+        <option value="$PROJECT_DIR$/static/interfaces/user/checkUserLogin.php" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
       </list>
     </option>
   </component>
@@ -193,11 +232,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sidebar" />
+=======
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -211,6 +253,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interfaces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuestbookDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Guestbook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -286,9 +352,19 @@
               <option name="myItemId" value="content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+=======
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interfaces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
@@ -306,11 +382,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\templates\sidebar\content" />
+      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\js\content" />
       <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\graphics\avatar" />
       <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\static\classes\lib" />
       <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\GuestbookDemo\js\lib" />
-      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\GuestbookDemo\css\lib" />
-      <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\GuestbookDemo\css\theme\blue" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="O:\OneDrive\MKIB7\DistributedSystems\Praktika\Web\Guestbook\static\interfaces\users" />
@@ -367,8 +443,11 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24816984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32740742" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -378,6 +457,12 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+=======
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810867" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -425,6 +510,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/templates/content/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -451,160 +537,75 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.018826135">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/components/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09413067">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/res/res_init.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80516684">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="45" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
+=======
     <entry file="file://$PROJECT_DIR$/templates/content/info/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.018826135">
-          <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/res/smaller_1024.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43918192">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sidebar/user/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18826135">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sidebar/user/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/madNormalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3110872">
-          <caret line="137" column="1" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/interfaces/user/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35769656">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/interfaces/user/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2635">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/user/signout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20129171">
+        <state vertical-scroll-proportion="0.20129171" vertical-offset="0" max-vertical-offset="929">
           <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14639397">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/content/private/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="9" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/components/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47065338">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.09413067">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+=======
+        <state vertical-scroll-proportion="0.47065338" vertical-offset="0" max-vertical-offset="903">
           <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/classes/models/UserModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4307863">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+=======
+        <state vertical-scroll-proportion="1.4307863" vertical-offset="0" max-vertical-offset="1564">
           <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/classes/models/DatabaseModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20708749">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/user/signin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60387516">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="39" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/interfaces/content/newContent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/interfaces/user/getUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/user/checkLoginStatus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2744887">
+        <state vertical-scroll-proportion="0.2744887" vertical-offset="0" max-vertical-offset="929">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/interfaces/GetInterface.js">
+    <entry file="file://$PROJECT_DIR$/templates/sidebar/content/newContent_public.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.80516684">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="45" selection-end-column="54" />
+=======
+        <state vertical-scroll-proportion="0.3200443" vertical-offset="0" max-vertical-offset="1071">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/content/contentBox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15060908">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.018826135">
+          <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="2" selection-end-column="51" />
+=======
+        <state vertical-scroll-proportion="0.15060908" vertical-offset="0" max-vertical-offset="903">
           <caret line="8" column="50" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="50" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         </state>
       </provider>
     </entry>
@@ -617,83 +618,405 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/animation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.18826135">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="1400" max-vertical-offset="2329">
           <caret line="129" column="53" selection-start-line="129" selection-start-column="53" selection-end-line="129" selection-end-column="53" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="6" />
+=======
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="527">
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/classes/models/ContentModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26688814">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/classes/lib/Core.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/classes/lib/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/classes/lib/CustomSessionHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07530454">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/core/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53067815">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/interfaces/user/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03765227">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.3110872">
+          <caret line="137" column="1" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
+=======
+        <state vertical-scroll-proportion="0.03765227" vertical-offset="0" max-vertical-offset="903">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/interfaces/client/registerClient.php">
+    <entry file="file://$PROJECT_DIR$/js/init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16943522">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.35769656">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/components/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+=======
+        <state vertical-scroll-proportion="0.24473976" vertical-offset="0" max-vertical-offset="903">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main/sidebar.css">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.20129171">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+=======
+        <state vertical-scroll-proportion="0.21959096" vertical-offset="0" max-vertical-offset="929">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sidebar/content/newContent_private.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.14639397">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+=======
+        <state vertical-scroll-proportion="0.696567" vertical-offset="0" max-vertical-offset="903">
+          <caret line="37" column="104" selection-start-line="37" selection-start-column="104" selection-end-line="37" selection-end-column="104" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/core/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="9" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="1275">
+          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/core/core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59388644">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.47065338">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="206" max-vertical-offset="1122">
+          <caret line="42" column="79" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/content/publicContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="1.4307863">
+          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+=======
+        <state vertical-scroll-proportion="0.42088267" vertical-offset="51" max-vertical-offset="2397">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content/private/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.20708749">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+=======
+        <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="714">
+          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="21" selection-end-column="88" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.60387516">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="39" selection-end-column="62" />
+=======
+        <state vertical-scroll-proportion="0.45748118" vertical-offset="0" max-vertical-offset="1156">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/classes/models/ContentModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+=======
+        <state vertical-scroll-proportion="0.5215947" vertical-offset="141" max-vertical-offset="1989">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/theme/blue/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+=======
+        <state vertical-scroll-proportion="0.19483316" vertical-offset="397" max-vertical-offset="2210">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.2744887">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/interfaces/GetInterface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main/content.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/classes/lib/DatabaseAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.884615" vertical-offset="168" max-vertical-offset="1071">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main/info.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3110872" vertical-offset="0" max-vertical-offset="929">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/classes/models/DatabaseModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.1153846" vertical-offset="729" max-vertical-offset="1836">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphics/documentation/interface2.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/user/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.15060908">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="50" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/interfaces/content/newContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.43918192">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+=======
+        <state vertical-scroll-proportion="0.056478404" vertical-offset="0" max-vertical-offset="903">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/interfaces/content/getContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="799">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+          <caret line="129" column="53" selection-start-line="129" selection-start-column="53" selection-end-line="129" selection-end-column="53" />
+=======
+        <state vertical-scroll-proportion="0.6706136" vertical-offset="2420" max-vertical-offset="3349">
+          <caret line="179" column="5" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/interfaces/user/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28239202" vertical-offset="0" max-vertical-offset="903">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/classes/lib/Core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="340">
+          <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/content/privateContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+=======
+        <state vertical-scroll-proportion="0.32938644" vertical-offset="153" max-vertical-offset="2329">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/interfaces/client/registerClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+=======
+        <state vertical-scroll-proportion="0.13178295" vertical-offset="0" max-vertical-offset="903">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/interfaces/PostInterface.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.26688814">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/classes/lib/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.43521595" vertical-offset="100" max-vertical-offset="1003">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/interfaces/user/getUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/initApplication.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.07530454">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+=======
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="187">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_0.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.53067815">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.34269664" vertical-offset="17851" max-vertical-offset="23664">
+          <caret line="1068" column="9" selection-start-line="1068" selection-start-column="9" selection-end-line="1068" selection-end-column="9" />
+          <folding />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.03765227">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.15060908" vertical-offset="0" max-vertical-offset="903">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/interfaces/GetInterface.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.16943522">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.4639738" vertical-offset="0" max-vertical-offset="916">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.59388644">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+=======
+        <state vertical-scroll-proportion="0.14639397" vertical-offset="0" max-vertical-offset="929">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sidebar/user/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.2378902">
           <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
@@ -711,11 +1034,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="929">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/content/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.35818475">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
@@ -726,22 +1054,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44667697">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+=======
+        <state vertical-scroll-proportion="0.39534885" vertical-offset="0" max-vertical-offset="903">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/content/info/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13595505" vertical-offset="1732" max-vertical-offset="2635">
+          <caret line="109" column="20" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/templates/sidebar/content/newContent_public.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.115385">
           <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+=======
+    <entry file="file://$PROJECT_DIR$/static/classes/lib/CustomSessionHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.538462" vertical-offset="40" max-vertical-offset="969">
+          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/templates/components/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+=======
+    <entry file="file://$PROJECT_DIR$/static/interfaces/user/checkUserLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13178295" vertical-offset="0" max-vertical-offset="903">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+>>>>>>> 476a4ccfc893a52f839e7c0670edc7629bcfbea9
           <folding />
         </state>
       </provider>

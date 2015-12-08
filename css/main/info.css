@@ -1,0 +1,23 @@
+div.centeredContent > div.overview{
+    right: 0;
+    margin-right: 10%;
+    width: 350px ;
+    background: red;
+    position: fixed;
+    display: inline;
+}
+/*
+div.centeredContent > div.contentContainer{
+    padding-right: 350px;
+}
+*/
+div.centeredContent  > div.contentContainer > img{
+    max-width: 100%;
+    left:0; right: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 0 12px 0;
+}
+div.smaller {
+    width: 55%;
+}
